@@ -1,11 +1,21 @@
 html, body{
-    height: 100%;
+    /* height: 100%; */
+    width: 100%;
+    margin: 0;
 }
+
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+a:hover{
+    text-decoration: underline;
+}
+
 
 #container{
     height: 100%;
-    
-    border: 1px solid black;
+
 }
 
 #main-body{
@@ -23,10 +33,14 @@ html, body{
 #search-bar{
     display: flex;
     height: 45px;
-    width: 44%;
+    width: 43%;
     border-radius: 45px;
-    margin: 35px auto 0px auto;
+    margin: 30px auto 0px auto;
     border: 1px solid rgb(218, 214, 214);
+}
+
+#search-bar:hover{
+    box-shadow: 0px 0px 4px 4px whitesmoke;
 }
 
 #mag-glass{
@@ -75,6 +89,7 @@ html, body{
 
     margin-left: auto;
     margin-right: auto;
+    margin-top:10px;
 
 }
 
@@ -90,6 +105,7 @@ html, body{
     border-radius: 5px;
 }
 
+
 #lucky-button{
     height: 40px;
     width: 150px;
@@ -102,8 +118,15 @@ html, body{
     border-radius: 5px;
 }
 
+#search-button:hover,
+#lucky-button:hover{
+    color: black;
+    cursor: pointer;
+    border: 1px solid rgb(214, 214, 214);
+}
+
 footer{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     position: fixed;
     bottom: 0px;
@@ -116,10 +139,39 @@ footer{
     background-color: whitesmoke;
 }
 
-#left-content{
+#left-footer{
     float: left;
+    display: flex;
+
+    height: 100%;
+
+    align-items: center;
 }
 
-#right-content{
+.left-content{
+
+    height: 20px;
+    margin-left: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: dimgray;
+}
+
+
+#right-footer{
     float: right;
+    display: flex;
+
+    height: 100%;
+    align-items: center;
+}
+
+.right-content{
+    height: 20px;
+    margin-right: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: dimgray;
 }
