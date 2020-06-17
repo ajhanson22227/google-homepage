@@ -1,6 +1,10 @@
 html, body{
     height: 100%;
+}
 
+#container{
+    height: 100%;
+    
     border: 1px solid black;
 }
 
@@ -52,7 +56,70 @@ html, body{
     height: 28px;
 }
 
+#search-input:focus{
+    outline-width: 0px;
+}
+
 #mic-img{
     height: 45px;
     width: 50px;
+}
+
+#button-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    height: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#search-button{
+    height: 40px;
+    width: 130px;
+    margin-right: 5px;
+
+    background-color: whitesmoke;
+    color: dimgray;
+
+    border: 0px;
+    border-radius: 5px;
+}
+
+#lucky-button{
+    height: 40px;
+    width: 150px;
+    margin-left: 5px;
+
+    background-color: whitesmoke;
+    color: dimgray;
+
+    border: 0px;
+    border-radius: 5px;
+}
+
+footer{
+    border: 1px solid red;
+
+    position: fixed;
+    bottom: 0px;
+
+    width: 100%;
+    height: 40px;
+
+    
+
+    background-color: whitesmoke;
+}
+
+#left-content{
+    float: left;
+}
+
+#right-content{
+    float: right;
 }
