@@ -181,7 +181,6 @@ footer{
     float: right;
     display: flex;
     align-items: flex-end;
-    border: 1px red solid;  
 }
 
 .right-header-content{
