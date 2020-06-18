@@ -1,5 +1,4 @@
 html, body{
-    /* height: 100%; */
     width: 100%;
     margin: 0;
 }
@@ -10,6 +9,7 @@ a{
 }
 a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -26,7 +26,7 @@ a:hover{
     display: flex;
     width: 21%;
     justify-content: center;
-    margin: 150px auto 0px auto;
+    margin: 100px auto 0px auto;
     padding-top: 10px;
 }
 
@@ -54,18 +54,14 @@ a:hover{
 #search-field{
     height: 45px;
     width: 100%;
-
     display: flex;
     align-items: center;
-
 }
 
 #search-input{
     border: 0px;
     background: transparent;
-
     font-size: 18px;
-
     width: 100%;
     height: 28px;
 }
@@ -83,24 +79,19 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 40%;
     height: 60px;
-
     margin-left: auto;
     margin-right: auto;
     margin-top:10px;
-
 }
 
 #search-button{
     height: 40px;
     width: 130px;
     margin-right: 5px;
-
     background-color: whitesmoke;
     color: dimgray;
-
     border: 0px;
     border-radius: 5px;
 }
@@ -110,10 +101,8 @@ a:hover{
     height: 40px;
     width: 150px;
     margin-left: 5px;
-
     background-color: whitesmoke;
     color: dimgray;
-
     border: 0px;
     border-radius: 5px;
 }
@@ -126,38 +115,27 @@ a:hover{
 }
 
 footer{
-    /* border: 1px solid red; */
-
     position: fixed;
     bottom: 0px;
-
     width: 100%;
     height: 40px;
-
-    
-
     background-color: whitesmoke;
 }
 
 #left-footer{
     float: left;
     display: flex;
-
     height: 100%;
-
     align-items: center;
 }
 
-.left-content{
-
+.left-footer-content{
     height: 20px;
     margin-left: 20px;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: dimgray;
 }
-
 
 #right-footer{
     float: right;
@@ -167,11 +145,58 @@ footer{
     align-items: center;
 }
 
-.right-content{
+.right-footer-content{
     height: 20px;
     margin-right: 20px;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: dimgray;
+}
+
+#header-container{
+    height: 50px;
+    width: 100%;
+}
+
+#header-left{
+    height: 100%;
+    width: 150px;
+    float: left;
+    display: flex;
+}
+
+.left-header-content{
+    margin-left: 10px;
+    padding-left: 12px;
+    padding-top: 5px;
+    line-height: 50px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+#header-right{
+    height: 100%;
+    width: 230px;;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    border: 1px red solid;  
+}
+
+.right-header-content{
+    position: relative;
+    float: right;
+    height: 100%;
+    line-height: 50px;
+    top: 5px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+.right-header-img{
+    position: relative;
+    top: 10px;
 }
